@@ -17,10 +17,27 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
+<script>
+function ShowImage()
+{
+	var obj = document.getElementById("zhao");
+	debugger;
+	obj.src = "\aaa.jpg";
+	obj.width = "100"
+	obj.height = "100"
+}
+function NoImage()
+{	
+	var obj = document.getElementById("zhao");
+	obj.src = "";
+	obj.width = ""
+	obj.height = ""
+}
+</script>
 
 </head>
 
-<body background=QQ图片20141222215057.jpg>
+<body>
 
 <embed src="bgm/小幸运.mp3" autostart="true" loop="-1" controls="ControlPanel" width="0" height="0" ></embed>
 
@@ -47,14 +64,14 @@
 			i hope that we will be happy forever.<br />
 			i wanner say:<br />
 			<span class="keywordone"/>baby，i love u <br />
-			<span class="keywordtwo">并且，等你看到了这句话告诉我，我就请你吃饭哦<br />二月二号改的，看你什么时候能发现，超过一个月上句话失效</span>
-			
+			<span class="keywordtwo"/>小老婆，想你哦<br />
 		</div>
+		<img id = "zhao" ></img>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					老婆，这是我们在一起的
+				<p onmousemove = "ShowImage()" onmouseout = "NoImage()" >老婆，这是我们在一起的</p>
 					<div id="elapseClock"></div>
 				<div id="loveu">
 					还有无数个日子我们要一起走过<br/>
