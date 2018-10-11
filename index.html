@@ -32,7 +32,7 @@
 		textArray.push("小包子");
 		let size = textArray.length;
 		let randomIndex = Math.floor(Math.random()*size);
-		alert(textArray[randomIndex]);
+		document.getElementById("demo").innerHTML=textArray[randomIndex];
 	}
 </script>
 </head>
@@ -40,6 +40,7 @@
 <body>
 <embed src="bgm/追光者.mp3" autostart="true" loop=true hidden="true" ></embed>
 <button type="button" onclick="displayText()">听听我想对你说什么</button>
+<h id="demo"></h>
 <div id="mainDiv">
 	<div id="content" >
 		<div id="code" style="margin-top:5px">
