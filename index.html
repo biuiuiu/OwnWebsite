@@ -18,10 +18,29 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
+<script>
+	function displayText(){
+		let textArray = [];
+		textArray.push("我爱你呀");
+		textArray.push("小鹅蛋你好呀");
+		textArray.push("我是你的小可爱");
+		textArray.push("哼");
+		textArray.push("给我买吃的");
+		textArray.push("给你买吃的");
+		textArray.push("去买彩票吧");
+		textArray.push("么么哒");
+		textArray.push("小包子");
+		let size = textArray.length;
+		let randomIndex = Math.floor(Math.random()*size);
+		document.getElementById("demo").innerHTML=textArray[randomIndex];
+	}
+</script>
 </head>
 
 <body>
 <embed src="bgm/追光者.mp3" autostart="true" loop=true hidden="true" ></embed>
+<button type="button" onclick="displayText()">听听我想对你说什么</button>
+<h id="demo"></h>
 <div id="mainDiv">
 	<div id="content" >
 		<div id="code" style="margin-top:5px">
