@@ -12,6 +12,22 @@
 	font-family: digit;
 	src: url('digital-7_mono.ttf') format("truetype");
 }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.demosize {
+    font-size: 12px;
+    margin: 4px 2px;
+}
 </style>
 
 <link href="css/default.css" type="text/css" rel="stylesheet">
@@ -39,8 +55,8 @@
 
 <body>
 <embed src="bgm/追光者.mp3" autostart="true" loop=true hidden="true" ></embed>
-<button type="button" onclick="displayText()">听听我想对你说什么</button>
-<h id="demo"></h>
+<button class="button" onclick="displayText()">听听我想对你说什么</button>
+<h class="demosize" id="demo"></h>
 <div id="mainDiv">
 	<div id="content" >
 		<div id="code" style="margin-top:5px">
